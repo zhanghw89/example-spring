@@ -1,4 +1,4 @@
-package com.springcloud.example.dao;
+	package com.springcloud.example.dao;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
