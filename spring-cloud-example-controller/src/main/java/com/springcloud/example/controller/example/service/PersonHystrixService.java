@@ -15,7 +15,7 @@ public class PersonHystrixService {
 	@Autowired
 	PersonService personService;
 
-	@HystrixCommand
+	@HystrixCommand(fallbackMethod="fallbackSave")
 	public List<Person> save(String name) {
 		return personService.save(name);
 	}
@@ -23,7 +23,7 @@ public class PersonHystrixService {
 	public List<Person> fallbackSave() {
 		List<Person> persons = new ArrayList<>();
 		Person p = new Person();
-		p.setName("zhangsan");
+		p.setName("testUser");
 		persons.add(p);
 		return persons;
 	}
