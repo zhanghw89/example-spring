@@ -9,7 +9,7 @@ spring:
         service-id: CONFIG
 eureka:
   instance:
-    non-secure-port-enabled: ${server.port:8083}
+    non-secure-port: ${server.port:8083}
   client:
     service-url:
-      efaultZone:http://${eureka.host:localhost}:${eureka.port:8761}/eureka/        
+      efaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/

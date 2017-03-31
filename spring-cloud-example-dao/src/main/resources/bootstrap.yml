@@ -12,4 +12,4 @@ eureka:
     secure-port: ${server.port:8082}
   client:
     service-url:
-      efaultZone:http://${eureka.host:localhost}:${eureka.port:8761}/eureka/        
+      efaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
