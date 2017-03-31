@@ -1,8 +1,8 @@
 spring:
   application:
-    name: ui
+    name: monitor
 eureka:
   instance:
-    non-secure-port-enabled: ${server.port:80}
+    non-secure-port-enabled: ${server.port:8989}
   client:
     service-url: efaultZone:http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
